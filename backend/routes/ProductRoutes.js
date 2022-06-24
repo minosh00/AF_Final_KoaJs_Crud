@@ -9,7 +9,7 @@ const router = new Router({
 })
 //get all products
 
-router.get('/', async ctx=>{
+router.get('/all', async ctx=>{
 
     ctx.body = await GetAll();
 
@@ -29,7 +29,7 @@ router.post('/add', async ctx=>{
 
 
 //get item by id
-router.get('/:id', async ctx=>{
+router.get('/:id' , async ctx=>{
 
     const id =  ctx.params.id;
     ctx.body = await getProductID(id);

@@ -1,5 +1,5 @@
 {
-  "name": "rest",
+  "name": "",
   "version": "1.0.0",
   "description": "This project demonstrates the creatio of REST API",
   "main": "index.js",
@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/cors": "^3.3.0",
     "@koa/router": "^10.0.0",
+    "cors": "^2.8.5",
     "koa": "^2.13.1",
     "mongodb": "^3.6.6"
   },
