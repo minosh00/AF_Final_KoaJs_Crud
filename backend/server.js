@@ -6,7 +6,7 @@ const cors = require('@koa/cors');
 
 
 const productRoutes = require('./routes/ProductRoutes');
-
+const UserRoutes = require('./routes/UserRoutes');
 const app = new Koa();
 
 app.use(cors({
@@ -17,15 +17,11 @@ app.use(cors({
 ));
 
    
- 
-  
-
-
 app.use(bodyParser());
 
 
 app.use(productRoutes.routes()).use(productRoutes.allowedMethods());
-
+app.use(UserRoutes.routes()).use(UserRoutes.allowedMethods());
 
 //setup connection 
 
